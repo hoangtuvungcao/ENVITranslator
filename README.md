@@ -115,4 +115,4 @@ Files under `extension/` provide a Chrome extension that calls the local API.
 - Select text on any webpage → right-click → "Translate selection via ENVI API" → popup alert shows translation
 - Click the extension icon to open the popup, type text, set source/target, and translate
 
-Note: The extension manifest references `icon.png` for icons. You can add any PNG to `extension/icon.png` with sizes 16/48/128 or remove the icons section in `manifest.json` if you prefer.
+Note: The extension manifest references `icon.png` for icons. You can add any PNG to `extension/icons/icon.png` with sizes 16/48/128 or remove the icons section in `manifest.json` if you prefer.
