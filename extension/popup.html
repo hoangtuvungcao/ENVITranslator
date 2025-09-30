@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ENVI Translator</title>
+    <style>
+      body { font-family: Inter, Arial, sans-serif; margin: 12px; width: 360px; }
+      h3 { margin: 0 0 8px; }
+      textarea { width: 100%; height: 120px; padding: 8px; border-radius: 8px; border: 1px solid #ddd; }
+      select, input, button { margin: 6px 0; width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #ddd; }
+      .row { display: flex; gap: 8px; }
+      .row > * { flex: 1; }
+      .result { white-space: pre-wrap; background: #f6f6f6; padding: 10px; border-radius: 8px; margin-top: 8px; border: 1px solid #eaeaea; min-height: 60px; }
+      .actions { display: flex; gap: 8px; }
+      .actions > button { flex: 1; cursor: pointer; background: #1f6feb; color: #fff; border: none; }
+      .actions > button.secondary { background: #6e7781; }
+      .hint { color: #666; font-size: 12px; }
+      .section { margin-top: 10px; padding-top: 8px; border-top: 1px dashed #e0e0e0; }
+      .toggle { display:flex; align-items:center; gap:8px; }
+    </style>
+  </head>
+  <body>
+    <h3>ENVI Translator</h3>
+    <div class="section">
+      <strong>Translate Text</strong>
+      <div class="row">
+        <div>
+          <label>Source</label>
+          <select id="sourceText"></select>
+        </div>
+        <div>
+          <label>Target</label>
+          <select id="targetText"></select>
+        </div>
+      </div>
+      <label>Text</label>
+      <textarea id="text"></textarea>
+      <div class="actions">
+        <button id="translateTextBtn">Translate</button>
+      </div>
+      <div class="result" id="result"></div>
+    </div>
+
+    
+    <script src="popup.js"></script>
+  </body>
+</html>
